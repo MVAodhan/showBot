@@ -60,4 +60,8 @@ app.post("/new", async (c) => {
   });
 });
 
-serve(app);
+// serve(app);
+serve({
+  fetch: app.fetch,
+  port: process.env.PORT || 8787,
+});
