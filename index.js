@@ -48,8 +48,7 @@ app.post("/new", async (c) => {
     .setColor(0x0099ff)
     .setTitle(body.title)
     .setURL(body.link)
-    .setImage(body.image)
-    .setDescription("<@&1219174984421736520> New Video");
+    .setImage(body.image);
 
   channel.send({
     embeds: [showEmbed],
